@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Digit_Number {
+public class DigitNumber {
     public static int numberSum(int number) {
         String numString = Integer.toString(number);
         String[] numArray = numString.split("");
