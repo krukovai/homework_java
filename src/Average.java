@@ -2,27 +2,27 @@ import java.util.Scanner;
 
 public class Average {
     public static double getAverage(int startArray, int finishArray) {
-        int i = 0;
+        int count = 0;
         int sum = 0;
         while (startArray <= finishArray) {
             sum = sum + startArray;
             startArray++;
-            i++;
+            count++;
         }
-        return (double) sum / i;
+        return (double) sum / count;
     }
 
     public static double getEvenAverage(int startArray, int finishArray) {
-        int i = 0;
+        int count = 0;
         int sum = 0;
         while (startArray <= finishArray) {
             if (startArray % 2 == 0) {
                 sum = sum + startArray;
-                i++;
+                count++;
             }
             startArray++;
         }
-        return (double) sum / i;
+        return (double) sum / count;
     }
 
     public static void main(String[] args) {

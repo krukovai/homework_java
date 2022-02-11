@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DigitNumber {
     public static int numberSum(int number) {
-        String numString = Integer.toString(number);
+        String numString = Integer.toString(Math.abs(number));
         String[] numArray = numString.split("");
         int sum = 0;
         for (int i = 0; i < numString.length(); i++) {
@@ -12,7 +12,7 @@ public class DigitNumber {
     }
 
     public static int numberSumEven(int number) {
-        String numString = Integer.toString(number);
+        String numString = Integer.toString(Math.abs(number));
         String[] numArray = numString.split("");
         int sum = 0;
         for (int i = 0; i < numString.length(); i++) {
@@ -25,7 +25,7 @@ public class DigitNumber {
     }
 
     public static int numberMax(int number) {
-        String numString = Integer.toString(number);
+        String numString = Integer.toString(Math.abs(number));
         String[] numArray = numString.split("");
         int sum = 0;
         int max = Integer.parseInt(numArray[0]);

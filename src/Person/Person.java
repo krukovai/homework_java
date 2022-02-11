@@ -55,7 +55,7 @@ public class Person {
         return name + " " + middleName + " " + familyName;
     }
 
-    public int birthYear() {
+    public int getBirthYear() {
         return Calendar.getInstance().get(Calendar.YEAR) - this.age;
     }
 }
